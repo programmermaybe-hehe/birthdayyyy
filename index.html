@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Chiku</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgMusic" src="music/blue.mp3" loop></audio>
+
+<div class="bg"></div>
+<div class="overlay"></div>
+
+<!-- Scene 1 : Cake -->
+<div id="scene1" class="scene">
+  <h1>HAPPY BIRTHDAYY CHIKUUUU ❤️</h1>
+  <p>Make a wish 🤗</p>
+
+  <div class="cake">
+    <div class="base"></div>
+    <div class="cream"></div>
+    <div class="top"></div>
+    <div class="candle" id="candle"></div>
+  </div>
+
+  <p>Blow the candle 🎂</p>
+</div>
+
+<!-- Scene 2 : Gift Drama -->
+<div id="scene2" class="scene hidden">
+  <h1>Gift chahiye?? 🤭</h1>
+
+  <div class="choice">
+    <button id="yesBtn">Yes</button>
+    <button id="noBtn">No</button>
+  </div>
+
+  <p id="forceText" class="hidden">Gift toh lena hi padega hehehe 😝😝</p>
+
+  <div class="gift hidden"></div>
+  <img src="images/runner.png" id="runner">
+
+  <div class="letters">
+    <img src="images/letter1.png" class="letter" id="letterMain">
+    <img src="images/letter2.png" class="letter" id="letterSecond">
+  </div>
+</div>
+
+<!-- Scene 3 : Memory Letter -->
+<div id="scene3" class="scene hidden letterScene">
+
+  <div class="borderImgs top">
+    <img src="images/memory1.jpg">
+    <img src="images/memory2.jpg">
+    <img src="images/memory3.jpg">
+  </div>
+
+  <div class="centerLetter">
+    <h1 id="letterWish"></h1>
+    <button id="nextBtn">Next</button>
+  </div>
+
+  <div class="borderImgs bottom">
+    <img src="images/memory4.jpg">
+    <img src="images/memory5.jpg">
+    <img src="images/memory6.jpg">
+  </div>
+
+</div>
+
+<!-- Scene 5 : Bouquet -->
+<div id="scene5" class="scene hidden">
+  <img src="images/bouquet.png" class="bouquet" id="bouquetBtn">
+  <p>For you 🌸</p>
+</div>
+
+<!-- Scene 4 : Final -->
+<div id="scene4" class="scene hidden">
+  <h1 id="finalText"></h1>
+
+  <div id="hugBox" class="hidden">
+    <img src="images/hug1.gif">
+    <img src="images/hug2.gif">
+    <p>Thank you for everything 🤍</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
